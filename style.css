@@ -14,6 +14,9 @@ url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Popp
 
 .logo {
     padding-top: 0.5em;
+    margin-top: 2em;
+    width: 15em;
+    height: 3.8em;
 }
 main {
     background: hsl(193,100%,96%) url(images/bg-hero-desktop.svg);
@@ -27,19 +30,19 @@ main {
  header {
      display: flex;
      justify-content: space-between;
-     margin: 0 50px;
+     margin:0 3em;
  }
 
  .main-content {
      display: flex;
      justify-content: space-between;
-     margin: 0 50px;
+     margin: 0 3em;
  }
 
  .btn__try {
-     margin: 40px 0;
-     width: 180px;
-     height: 40px;
+     margin: 3em 0;
+     width: 12em;
+     height: 3.5em;
      border: none;
      border-radius: 64px;
      box-shadow: 0 3px 5px rgba(0,0,0,0.4);
@@ -54,8 +57,8 @@ main {
      border: none;
      border-radius: 64px;
      box-shadow: 0 3px 5px rgba(0,0,0,0.6);
-     height: 50px;
-     width: 290px;
+     height: 4em;
+     width: 20em;
      font-weight: bold;
  }
 
@@ -74,14 +77,14 @@ main {
  section {
      display: flex;
      justify-content: space-between;
-     margin: 40px 5em 2px;
-     padding: 25px 70px;
+     margin: 2.5em 5em 2px;
+     padding: 1.5em 4.5em;
      border-radius: 17px;
      box-shadow: 0 3px 5px rgba(0,0,0,0.1),0 -3px 5px rgba(0,0,0,0.1);
  }
 
  .section-text {
-    margin-right:80px;
+    margin-right:5em;
  }
 
  .section, .nav-tag {
@@ -95,7 +98,7 @@ main {
  .build {
     box-shadow: 0 3px 5px rgba(0,0,0,0.6);
     width: fit-content;
-    padding: 30px 70px;
+    padding: 2em 5em;
     border-radius: 25px;
     position: relative;
     display: flex;
@@ -112,16 +115,16 @@ main {
      color: #fff;
      display: flex;
      justify-content: space-between;
-     padding: 150px 50px 20px;
+     padding: 9em 3em 1.5em;
  }
 
  .footer-icon {
      display: inline-flex;
-     padding-right:10px;
+     padding-right: 0.7em;
  }
 
  li,a {
-     margin-bottom: 40px;
+     margin-bottom: 1em;
      list-style-type: none;
      color: #fff;
      text-decoration: none;
@@ -141,4 +144,86 @@ main {
 
 a:hover {
     text-decoration: underline;
+}
+
+@media (max-width:700px) {
+    .btn__try {
+        margin: 3em 0;
+        width: 12em;
+        height: 3.5em;
+        border-radius: 64px;
+    }
+
+    .logo {
+        padding-top: 0.5em;
+        margin-top: 2em;
+        width: 7em;
+        height: 3em;
+    }
+
+    .main-content {
+        margin: 0 0.5em;
+        display: block;
+        text-align: center;
+    }
+
+    header {
+        margin:0 1em;
+    }
+
+    .build {
+        width: 20em;
+        padding: 0;
+        margin: 0;
+        border-radius: 25px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        /* top: 100px; */
+        flex: 1;
+        height: 15em;
+        font-size: small;
+        text-align: center;
+     }
+
+    .build-pic {
+        width: 18em;
+    }
+
+    .content-centre {
+        margin-bottom: 2em;
+    }
+    
+    section {
+        display: grid;
+        margin: 2.5em 1em 2px;
+        padding: 1.5em 1em;
+        text-align: center;
+        grid-template-areas: 
+        "photo"
+        "text";
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr;
+    }
+
+    .text {
+        grid-area: "text";
+        grid-row: 2/3;
+        text-align: center;
+        margin: 0;
+    }
+
+    .photo {
+        width: 18em;
+        margin: 0;
+        padding: 0;
+        grid-area: "photo";
+        grid-row: 1/2;
+    }
+
+    .btn-centre {
+        position: absolute;
+      
+    }
 }
