@@ -226,4 +226,21 @@ a:hover {
         position: absolute;
       
     }
+
+    footer {
+        display: block;
+    }
+
+    .footer-icon {
+        
+    }
+   
+    li,a {
+        margin-bottom: 1em;
+    }
+   
+    .socials {
+        margin: auto;
+        padding-bottom: 3em;
+    }
 }
